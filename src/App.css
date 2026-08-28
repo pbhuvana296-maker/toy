@@ -1,0 +1,180 @@
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: #5b2c83;
+}
+
+.navbar-brand {
+  font-size: 25px;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.nav-link:hover {
+  color: #ffd43b;
+}
+
+/* Hero */
+.hero-section {
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #7b3fa1, #f6c945);
+  color: white;
+  padding: 60px 20px;
+}
+
+.hero-section h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  max-width: 650px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+/* Category Cards */
+.category-card {
+  background: white;
+  border-radius: 20px;
+  transition: 0.3s;
+  border: 2px solid #f0e5f7;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(91, 44, 131, 0.2) !important;
+}
+
+.category-icon {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.category-card h5 {
+  color: #5b2c83;
+  font-weight: bold;
+}
+
+/* Toy Cards */
+.toy-card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.toy-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.toy-image {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  background: #fff3c4;
+}
+
+.toy-card:nth-child(2) .toy-image {
+  background: #e7d5f5;
+}
+
+.toy-card:nth-child(3) .toy-image {
+  background: #d8f3dc;
+}
+
+.toy-card:nth-child(4) .toy-image {
+  background: #cdebf7;
+}
+
+.toy-card:nth-child(5) .toy-image {
+  background: #ffe0e9;
+}
+
+.toy-card:nth-child(6) .toy-image {
+  background: #f3e5ab;
+}
+
+/* Buttons */
+.btn-warning {
+  background: #f6c945;
+  border: none;
+  color: #333;
+}
+
+.btn-warning:hover {
+  background: #5b2c83;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Offer */
+.offer-section {
+  background: #f6c945;
+  color: #333;
+}
+
+.offer-section h2 {
+  color: #5b2c83;
+}
+
+/* Contact */
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.form-control:focus {
+  border-color: #7b3fa1;
+  box-shadow: 0 0 8px rgba(123, 63, 161, 0.2);
+}
+
+/* Footer */
+footer {
+  background: #5b2c83 !important;
+}
+
+footer h5 {
+  color: #ffd43b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 400px;
+  }
+
+  .hero-section h1 {
+    font-size: 36px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+  }
+
+  .toy-image {
+    height: 180px;
+  }
+}

@@ -1,0 +1,75 @@
+```jsx
+function Toys() {
+  const toys = [
+    {
+      name: "Teddy Bear",
+      price: "₹599",
+      image: "https://images.unsplash.com/photo-1559454403-b8fb88521f11?auto=format&fit=crop&w=600&q=80",
+    },
+    {
+      name: "Toy Car",
+      price: "₹399",
+      image: "https://images.unsplash.com/photo-1594787318286-3d835c1d207f?auto=format&fit=crop&w=600&q=80",
+    },
+    {
+      name: "Building Blocks",
+      price: "₹699",
+      image: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=600&q=80",
+    },
+    {
+      name: "Robot Toy",
+      price: "₹899",
+      image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=600&q=80",
+    },
+    {
+      name: "Toy Train",
+      price: "₹549",
+      image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=600&q=80",
+    },
+    {
+      name: "Doll House",
+      price: "₹999",
+      image: "https://images.unsplash.com/photo-1599623560574-39d485900c95?auto=format&fit=crop&w=600&q=80",
+    },
+  ];
+
+  return (
+    <section className="py-5">
+      <div className="container">
+        <div className="text-center mb-5">
+          <h1 className="fw-bold">Our Toys 🧸</h1>
+          <p className="text-muted">
+            Explore our fun and colourful collection of toys.
+          </p>
+        </div>
+
+        <div className="row g-4">
+          {toys.map((toy, index) => (
+            <div className="col-md-6 col-lg-4" key={index}>
+              <div className="card h-100 shadow-sm border-0">
+                <img
+                  src={toy.image}
+                  className="card-img-top"
+                  alt={toy.name}
+                  style={{ height: "250px", objectFit: "cover" }}
+                />
+
+                <div className="card-body text-center">
+                  <h4 className="fw-bold">{toy.name}</h4>
+                  <h5 className="text-warning fw-bold">{toy.price}</h5>
+
+                  <button className="btn btn-warning fw-bold mt-2">
+                    Buy Now 🛒
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Toys;
+```
