@@ -4,7 +4,6 @@ import "./App.css";
 function App() {
   return (
     <div>
-      {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
           <a className="navbar-brand fw-bold" href="#">
@@ -39,7 +38,6 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero */}
       <section id="home" className="hero-section">
         <div className="container text-center">
           <h1 className="display-4 fw-bold">
@@ -56,7 +54,6 @@ function App() {
         </div>
       </section>
 
-      {/* Categories */}
       <section id="categories" className="py-5">
         <div className="container">
           <h2 className="text-center fw-bold mb-4">
@@ -99,7 +96,6 @@ function App() {
         </div>
       </section>
 
-      {/* Featured Toys */}
       <section id="toys" className="py-5 bg-light">
         <div className="container">
           <h2 className="text-center fw-bold mb-4">
@@ -162,7 +158,6 @@ function App() {
         </div>
       </section>
 
-      {/* Offer */}
       <section className="offer-section py-5 text-center">
         <div className="container">
           <h2 className="fw-bold">🎉 Special Offer!</h2>
@@ -175,7 +170,6 @@ function App() {
         </div>
       </section>
 
-      {/* Contact */}
       <section id="contact" className="py-5">
         <div className="container">
           <h2 className="text-center fw-bold mb-4">
@@ -208,7 +202,6 @@ function App() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-dark text-white text-center py-4">
         <h5>🧸 ToyVerse</h5>
         <p className="mb-0">
